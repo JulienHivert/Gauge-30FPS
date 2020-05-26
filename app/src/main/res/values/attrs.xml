@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="SpeedTestGauge">
+        <attr name="gaugeStrokeColor" format="color" />
+        <attr name="gaugeStrokeWidth" format="dimension" />
+        <attr name="gaugeStartAngle" format="integer" />
+        <attr name="gaugeSweepAngle" format="integer" />
+        <attr name="gaugeStartValue" format="integer" />
+        <attr name="gaugeEndValue" format="integer" />
+    </declare-styleable>
+
+</resources>

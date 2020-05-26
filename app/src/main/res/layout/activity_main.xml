@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <com.example.gauge30fps.SpeedGaugeView
+        android:id="@+id/speedTestGauge"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        app:gaugeEndValue="100"
+        app:gaugeStartAngle="135"
+        app:gaugeStartValue="0"
+        app:gaugeStrokeColor="@color/md_grey_400"
+        app:gaugeStrokeWidth="20dp"
+        app:gaugeSweepAngle="270"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/start_button_ft"
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        android:background="@drawable/blue_round_button"
+        android:textColor="@android:color/white"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="@+id/speedTestGauge"
+        app:layout_constraintEnd_toEndOf="@+id/speedTestGauge"
+        app:layout_constraintStart_toStartOf="@+id/speedTestGauge"
+        app:layout_constraintTop_toTopOf="@+id/speedTestGauge" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Click again for reset the gauge"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/speedTestGauge"
+        app:layout_constraintStart_toStartOf="@+id/speedTestGauge"
+        app:layout_constraintTop_toBottomOf="@+id/speedTestGauge" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

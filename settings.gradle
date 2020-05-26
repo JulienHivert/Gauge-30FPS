@@ -1,0 +1,2 @@
+rootProject.name='Gauge30FPS'
+include ':app'
